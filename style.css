@@ -1,0 +1,110 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+}
+
+body {
+  background: #121212;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #00e0ff;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #a0f7ff;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.game-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  justify-content: center;
+}
+
+.game-card {
+  background: #1f1f1f;
+  border-radius: 15px;
+  padding: 30px 40px;
+  width: 250px;
+  text-align: center;
+  box-shadow:
+    0 0 8px #00e0ffaa,
+    inset 0 0 15px #00e0ff44;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-15px);
+  box-shadow:
+    0 0 25px #00e0ffcc,
+    inset 0 0 25px #00e0ff66;
+}
+
+.game-card h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #00e0ff;
+  text-shadow: 0 0 5px #00e0ffbb;
+}
+
+.play-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  background: linear-gradient(45deg, #00e0ff, #007bbd);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow:
+    0 0 10px #00e0ff,
+    0 0 20px #00e0ff,
+    0 0 40px #00e0ff;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.play-btn:hover {
+  background: linear-gradient(45deg, #007bbd, #00e0ff);
+  box-shadow:
+    0 0 20px #00ffff,
+    0 0 40px #00ffff,
+    0 0 60px #00ffff;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 1rem;
+  color: #444;
+  user-select: none;
+}
